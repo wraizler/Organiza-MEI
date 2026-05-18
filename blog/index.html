@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | OrganizaMeuMEI — Artigos sobre MEI, ME e Simples Nacional</title>
+<meta name="description" content="Artigos práticos sobre limite do MEI, transição pra ME, Simples Nacional, Fator R e tudo que você precisa saber pra crescer sem dor de cabeça.">
+<meta name="keywords" content="blog MEI, artigos MEI, limite MEI, transição MEI ME, Simples Nacional">
+<meta property="og:title" content="Blog | OrganizaMeuMEI">
+<meta property="og:description" content="Artigos práticos sobre MEI, ME e Simples Nacional.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://organizameumei.app.br/blog/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HRR1LXFCWB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HRR1LXFCWB');
+</script>
+<style>:root {
+  --areia: #F5EFE0;
+  --areia-quente: #EDE3CD;
+  --terra: #6B4423;
+  --mata: #4A5D3A;
+  --mata-escura: #2E3D24;
+  --ocre: #C89B3C;
+  --ocre-claro: #E0B85E;
+  --ocre-suave: #F4D88A;
+  --cobre: #B8521C;
+  --cobre-escuro: #8B3D14;
+  --tinta: #1F1A12;
+  --tinta-suave: #4A3F2E;
+  --branco-suave: #FBF7EC;
+  --linha: #D4C8AB;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Bitter', Georgia, serif; background: var(--areia); color: var(--tinta); line-height: 1.7; font-size: 18px; }
+.display, h1, h2, h3 { font-family: 'Bitter', Georgia, serif; font-weight: 900; letter-spacing: -0.02em; line-height: 1.15; }
+a { color: var(--cobre); }
+.blog-header { background: var(--mata-escura); padding: 20px 0; border-bottom: 4px solid var(--ocre); position: sticky; top: 0; z-index: 100; }
+.blog-header-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.blog-logo { color: var(--areia); font-size: 22px; font-weight: 900; text-decoration: none; }
+.blog-logo span { color: var(--ocre); }
+.blog-nav { display: flex; gap: 24px; }
+.blog-nav a { color: var(--areia); text-decoration: none; font-size: 15px; font-family: 'Archivo', sans-serif; font-weight: 500; }
+.blog-nav a:hover { color: var(--ocre); }
+.article-hero { background: var(--areia-quente); padding: 60px 24px 40px; border-bottom: 1px solid var(--linha); }
+.article-hero-inner { max-width: 800px; margin: 0 auto; }
+.article-eyebrow { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 13px; color: var(--cobre); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+.article-title { font-size: clamp(32px, 5vw, 52px); color: var(--tinta); margin-bottom: 20px; }
+.article-subtitle { font-size: 22px; color: var(--tinta-suave); font-style: italic; margin-bottom: 24px; line-height: 1.4; }
+.article-meta { font-family: 'Archivo', sans-serif; font-size: 14px; color: var(--tinta-suave); }
+.article-body { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+.article-body p { margin-bottom: 24px; font-size: 19px; }
+.article-body h2 { font-size: 32px; color: var(--tinta); margin: 48px 0 20px; padding-top: 24px; border-top: 2px solid var(--linha); }
+.article-body h3 { font-size: 24px; color: var(--mata-escura); margin: 36px 0 16px; }
+.article-body ul, .article-body ol { margin: 0 0 24px 32px; }
+.article-body li { margin-bottom: 12px; font-size: 18px; }
+.article-body strong { color: var(--tinta); font-weight: 700; }
+.article-body em { color: var(--cobre); font-style: italic; }
+.callout { background: var(--areia-quente); border-left: 4px solid var(--ocre); padding: 24px 28px; margin: 32px 0; border-radius: 4px; }
+.callout-warning { border-left-color: var(--cobre); background: rgba(184, 82, 28, 0.08); }
+.callout p:last-child { margin-bottom: 0; }
+.callout strong { color: var(--cobre); }
+.cta-inline { background: var(--mata-escura); color: var(--branco-suave); padding: 32px; margin: 40px 0; border-radius: 6px; text-align: center; }
+.cta-inline h3 { color: var(--ocre); margin-bottom: 12px; font-size: 26px; padding: 0; border: none; }
+.cta-inline p { color: var(--branco-suave); margin-bottom: 20px; font-size: 17px; }
+.cta-button { display: inline-block; background: var(--ocre); color: var(--tinta); padding: 14px 28px; border-radius: 6px; text-decoration: none; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.02em; transition: background 0.2s; }
+.cta-button:hover { background: var(--ocre-claro); }
+.article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 16px; }
+.article-body th, .article-body td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--linha); }
+.article-body th { background: var(--areia-quente); font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+.faq-section { background: var(--areia-quente); padding: 60px 24px; border-top: 1px solid var(--linha); }
+.faq-inner { max-width: 720px; margin: 0 auto; }
+.faq-title { font-size: 32px; color: var(--tinta); margin-bottom: 32px; }
+.faq-item { background: var(--branco-suave); border-radius: 6px; padding: 24px 28px; margin-bottom: 16px; border: 1px solid var(--linha); }
+.faq-question { font-weight: 700; font-size: 19px; color: var(--tinta); margin-bottom: 12px; font-family: 'Bitter', Georgia, serif; }
+.faq-answer { color: var(--tinta-suave); font-size: 17px; }
+.related-section { background: var(--areia); padding: 60px 24px; }
+.related-inner { max-width: 800px; margin: 0 auto; }
+.related-title { font-size: 28px; margin-bottom: 32px; }
+.related-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.related-card { background: var(--branco-suave); border: 1px solid var(--linha); border-radius: 6px; padding: 24px; text-decoration: none; color: var(--tinta); transition: transform 0.2s; }
+.related-card:hover { transform: translateY(-4px); border-color: var(--ocre); }
+.related-card .eyebrow { font-family: 'Archivo', sans-serif; font-size: 12px; text-transform: uppercase; color: var(--cobre); font-weight: 800; letter-spacing: 0.1em; margin-bottom: 8px; }
+.related-card h4 { font-size: 18px; color: var(--tinta); margin-bottom: 8px; font-weight: 700; }
+.related-card p { font-size: 15px; color: var(--tinta-suave); }
+.blog-footer { background: var(--mata-escura); color: var(--branco-suave); padding: 40px 24px; text-align: center; }
+.blog-footer p { color: rgba(251, 247, 236, 0.7); font-size: 14px; margin-bottom: 8px; }
+.blog-footer a { color: var(--ocre); text-decoration: none; }
+.blog-index-hero { background: var(--mata-escura); color: var(--branco-suave); padding: 80px 24px 60px; text-align: center; }
+.blog-index-hero h1 { font-size: clamp(36px, 6vw, 56px); color: var(--ocre); margin-bottom: 16px; }
+.blog-index-hero p { font-size: 20px; color: var(--branco-suave); max-width: 600px; margin: 0 auto; }
+.blog-list { max-width: 900px; margin: 0 auto; padding: 60px 24px 80px; }
+.blog-card { background: var(--branco-suave); border: 1px solid var(--linha); border-radius: 8px; padding: 32px; margin-bottom: 24px; text-decoration: none; color: var(--tinta); display: block; transition: transform 0.2s, border-color 0.2s; }
+.blog-card:hover { transform: translateY(-4px); border-color: var(--ocre); }
+.blog-card .eyebrow { font-family: 'Archivo', sans-serif; font-size: 12px; text-transform: uppercase; color: var(--cobre); font-weight: 800; letter-spacing: 0.1em; margin-bottom: 12px; }
+.blog-card h2 { font-size: 26px; color: var(--tinta); margin-bottom: 12px; padding: 0; border: none; }
+.blog-card p { font-size: 17px; color: var(--tinta-suave); line-height: 1.5; }
+.blog-card .read-more { display: inline-block; margin-top: 16px; color: var(--cobre); font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+@media (max-width: 768px) { body { font-size: 17px; } .article-body { padding: 40px 20px 60px; } .article-body p { font-size: 17px; } .article-hero { padding: 40px 20px 32px; } }</style>
+</head>
+<body>
+<header class="blog-header">
+  <div class="blog-header-inner">
+    <a href="/" class="blog-logo">Organiza<span>Meu</span>MEI</a>
+    <nav class="blog-nav">
+      <a href="/">Simulador</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#preco">Planos</a>
+    </nav>
+  </div>
+</header>
+<section class="blog-index-hero">
+  <h1>Blog OrganizaMeuMEI</h1>
+  <p>Artigos práticos sobre MEI, transição pra ME e Simples Nacional. Sem juridiquês.</p>
+</section>
+<section class="blog-list">
+
+<a href="/blog/como-saber-se-vou-estourar-limite-mei-2026.html" class="blog-card">
+  <div class="eyebrow">Limite do MEI</div>
+  <h2>Como saber se vou estourar o limite do MEI em 2026</h2>
+  <p>O limite do MEI em 2026 é R$ 81 mil/ano. Saiba como calcular se vai estourar, sinais de alerta e o que fazer antes que aconteça.</p>
+  <span class="read-more">Ler artigo →</span>
+</a>
+<a href="/blog/o-que-acontece-se-ultrapassar-81-mil-mei.html" class="blog-card">
+  <div class="eyebrow">Desenquadramento</div>
+  <h2>O que acontece se ultrapassar R$ 81 mil no MEI</h2>
+  <p>Estourou o limite de R$ 81 mil do MEI? Entenda a timeline do desenquadramento, multas, juros e como agir pra minimizar o impacto.</p>
+  <span class="read-more">Ler artigo →</span>
+</a>
+<a href="/blog/anexo-iii-vs-anexo-v-simples-nacional.html" class="blog-card">
+  <div class="eyebrow">Simples Nacional</div>
+  <h2>Diferença entre Anexo III e Anexo V do Simples Nacional</h2>
+  <p>Anexo III começa em 6%, Anexo V em 15,5%. Entenda o Fator R, como decidir onde você cai e como otimizar pra pagar menos imposto.</p>
+  <span class="read-more">Ler artigo →</span>
+</a>
+<a href="/blog/simulador-limite-mei-2026.html" class="blog-card">
+  <div class="eyebrow">Simulador</div>
+  <h2>Simulador de limite MEI 2026: descubra quando vai estourar</h2>
+  <p>Use nosso simulador gratuito para descobrir em qual mês você vai estourar o limite do MEI de R$ 81 mil em 2026. Sem cadastro, em 2 minutos.</p>
+  <span class="read-more">Ler artigo →</span>
+</a>
+<a href="/blog/quanto-custa-sair-do-mei-virar-microempresa.html" class="blog-card">
+  <div class="eyebrow">MEI para ME</div>
+  <h2>Quanto custa sair do MEI e virar microempresa (ME) em 2026</h2>
+  <p>Saindo do MEI pra ME? Veja todos os custos: contador, abertura, impostos, encargos e quando realmente vale a pena fazer a transição.</p>
+  <span class="read-more">Ler artigo →</span>
+</a>
+</section>
+<footer class="blog-footer">
+  <p><strong style="color: var(--ocre);">OrganizaMeuMEI</strong></p>
+  <p>Quando o MEI ficar pequeno, a gente te organiza.</p>
+  <p style="margin-top: 16px;"><a href="/">Voltar pro simulador</a> · <a href="/blog/">Mais artigos</a></p>
+</footer>
+</body>
+</html>
